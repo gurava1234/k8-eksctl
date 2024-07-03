@@ -1,0 +1,14 @@
+apiversion: eksctl.io/v1alpha5
+kind: clusterconfig
+
+
+metadata:
+ name: roboshop
+ region: us-east-1
+
+manageNodeGroups:
+ - name: sopt
+   instanceType: m5.large
+   desiredcapacity: 3
+   spot: true
+   
